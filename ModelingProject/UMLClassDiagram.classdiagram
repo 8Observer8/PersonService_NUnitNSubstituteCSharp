@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="0e9e75e6-808f-4439-8628-05a8f756b393" name="UMLClassDiagram" linkedPackageId="33675ac4-043a-4643-ad80-cec48b97e177" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="7943c632-cc83-461a-abe0-40038fbb99b8">
+      <profileInstance Id="040e840d-b0a1-4312-a100-c95f7c587c18" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0d4e7732-3e17-45fd-9eeb-27efc0bcf4cb">
+      <profileInstance Id="8c40984b-6f95-468c-a010-5e641e647a6b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="7bedcafb-449b-4040-a8ed-0a7ad5f7bc7d" name="PersonService">
+        <elementDefinition Id="bd8a24ab-7d8f-4114-834d-2b37b7921ac0" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="2a3cbed8-12ba-4939-91ff-bcb8217ba464" name="PersonService" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8405d411-80e7-4afe-8930-882e95f5c27d" />
+              <ownedAttributesInternal>
+                <property Id="30a82195-5162-4a27-bc30-a57e1a82f79e" name="_validator" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b1631e50-629e-4d16-9812-2adfc00e551c" />
+                </property>
+                <property Id="f796c2e0-d557-4c89-817d-422f13516dd8" name="_dataContext" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1122f6bf-dc09-456e-865f-32a0fc997d66" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="1a50a899-acdb-4d44-8a5e-a2553db07f8c" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5025fd8f-786b-4294-93bb-3f23a756a386" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ca41eda4-bd37-48b6-9a5e-54399ded6556" name="person" direction="In" isUnique="false">
+                        <elementDefinition Id="4ac1ae9c-fb6a-47d3-903c-ee2e04f0ff2e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="6defb961-61cb-4ab5-a883-16ccdb1fc721" LastKnownName="Person" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9f4aa65d-4b51-4717-9cc0-d7bbc5750921" name="Person" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6fda3538-3e04-4dab-9aeb-79d901e9c351" />
+              <ownedAttributesInternal>
+                <property Id="7729c87e-ebd6-4052-81e0-a978aec32ddb" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a880b5a6-4e84-403f-8fcd-4c3a9e764912" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6004e7f2-ba80-437d-8e4d-c589fc7f9c59" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </property>
+                <property Id="c4136f91-228d-4928-a3e1-dcd4ed92a202" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="824c5106-77a9-4141-b5b2-11c84291582e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3a53d3d5-8091-4556-a427-ba2c4284f551" LastKnownName="String" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="d79b8214-76d6-4e56-b789-1138db595c26" name="IPersonValidator" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="2b321472-c7c3-482e-98bd-9cc252f0d1e8" />
+              <ownedOperations>
+                <operation Id="75f05b1c-1799-4669-b795-ab895976e7fc" name="Validate" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="584d1f9f-d288-47a2-8265-68d5d3c54758" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="901e97e3-47e2-44c9-bf28-0ce99fb8c6f4" name="person" direction="In" isUnique="false">
+                        <elementDefinition Id="985e9412-62dd-4b2a-ba1a-e40126c45dde" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="6defb961-61cb-4ab5-a883-16ccdb1fc721" LastKnownName="Person" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="b0a10b86-4677-4e27-824d-7ae6212e9475" name="IDataContext" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="930b1889-64b3-412d-86fb-5b52dc9c9f83" />
+              <ownedOperations>
+                <operation Id="6f63c3b1-c303-4a9f-a970-b622a0c23aba" name="Save" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2e2bb16c-0657-4df0-92dc-cb61fe2c75a3" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8f174a90-2b55-4138-9f4c-de97fe250ecf" name="person" direction="In">
+                        <elementDefinition Id="c0e6026f-f2d4-4827-9e0f-8df871cecc44" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="6defb961-61cb-4ab5-a883-16ccdb1fc721" LastKnownName="Person" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="6004e7f2-ba80-437d-8e4d-c589fc7f9c59" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3a53d3d5-8091-4556-a427-ba2c4284f551" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6defb961-61cb-4ab5-a883-16ccdb1fc721" name="Person" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::PersonService::Person">
+        <elementDefinition Id="6fda3538-3e04-4dab-9aeb-79d901e9c351" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="33675ac4-043a-4643-ad80-cec48b97e177" name="ModelingProject">
+    <elementDefinition Id="3c762723-bad9-444c-961a-a6605d5d64d8" />
+  </package>
+</logicalClassDesignerModel>
